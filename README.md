@@ -1,7 +1,29 @@
-Bom Projeto!! 
+Projeto baseado em uma entrega do curso da Kenzie Academy Brasil.
 
-Doc: http://localhost:3333/api-documentation/
+MD-Companies é um projeto que tem como objetivo exercitar os recursos mais avançados do JS vanilla. Ele simula um site de gestão de empresas, onde o usuário pode ser um administrador, ou um funcionário contratado ou não.
 
-Fgima: https://www.figma.com/file/lrbOLWLRjonxYYVOxeLEQm/%5BM2%5D-%F0%9F%8F%81-Entrega---Kenzie-Empresas
+MD-Companies acompanha as seguintes funcionalidades:
 
-APi Local: https://github.com/Kenzie-Academy-Brasil-Developers/kenzie-empresas-API
+homepage: a homepage acompanha uma lista com todas as empresas cadastradas no site, sendo possível filtrar por categoria.
+
+cadastro: é possível se cadastrar no site utilizando um email fictício.
+login: você pode acessar sua conta usando o email cadastrado.
+
+Funcionalidades de admin: 
+Acesso ao dashboard de todas as empresas. 
+Criar departamentos para empresas.
+Visualizar departamentos.
+Editar departamentos.
+Excluir departamentos.
+Contratar funcionários.
+Demitir funcionários.
+Acesso ao dashboard de todos os usuários cadastrados.
+Editar usuário.
+Excluir usuário.
+
+Funcionalidades de funcionário:
+Acesso ao dashboard com perfil do usuário.
+Acesso ao departamento que o usuário trabalha.
+Acesso a lista de funcionários do departamento.
+
+
