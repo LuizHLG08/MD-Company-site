@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600&display=swap");
+
+:root {
+  --color-brand-1: #7700ff;
+  --color-brand-2: #823fcf;
+  --color-brand-3: #f0ecfb;
+
+  --color-grey-1: #212529;
+  --color-grey-2: #495057;
+  --color-grey-3: #adb5bd;
+  --color-grey-4: #e9ecef;
+  --color-grey-5: #f1f3f5;
+  --color-grey-1-opacity-5: rgba(0, 0, 0, 0.5);
+  --color-black: #000000;
+  --fixed-white: #ffffff;
+
+  --color-success: #36B37E;
+  --color-success-2: #33ad7a;
+  --color-error-1: #FF5630;
+  --color-error-2: #c73650;
+  --color-warning: #FFAB00;
+
+  --font-size-1: 2rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 0.875rem;
+  --font-size-4: 0.75rem;
+
+  --font-weight-1: 700;
+  --font-weight-2: 600;
+  --font-weight-3: 500;
+  --font-weight-4: 400;
+
+  --font-line-height-1: 150%;
+
+  --radius-1: 0.5rem;
+  --radius-2: 0.25rem;
+
+  --animation-duration: 0.2s;
+  --animation-type: ease;
+
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "Nunito", sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+}
+.error {
+  border: 1px solid var(--color-error-2);
+}
+.empty__credential {
+  position: relative;
+  bottom: 1.5rem;
+}
+.alert {
+  color: var(--color-error-2);
+}

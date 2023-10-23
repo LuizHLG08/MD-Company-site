@@ -1,0 +1,78 @@
+.header__title {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.title1 {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-1);
+}
+
+.title2 {
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    background-color: var(--fixed-white);
+
+}
+.title3 {
+    font-size: 1.875rem;
+    font-weight: var(--font-weight-1);
+}
+.title4 {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+}
+
+
+.user_info__name {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+.user_info__email {
+    margin-left: 1.5rem;
+}
+.not_hired__message {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: auto;
+}
+.user_company__name {
+    height: 4rem;
+    width: 100%;
+    background-color: var(--color-brand-1);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--fixed-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.employees__name {
+    margin: 1rem;
+    font-weight: 700;
+}
+.default__message {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 11rem 0;
+    
+}
+.department__description {
+    color: var(--color-grey-1);
+    font-size: 0.875rem;
+}
+.company__name {
+    font-weight: 500;
+}
+.not_departments__message {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 11rem 0;
+}
+.delete__employee--warning {
+    margin-bottom: 1rem;
+}
+

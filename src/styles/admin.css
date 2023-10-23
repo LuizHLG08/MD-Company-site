@@ -1,0 +1,126 @@
+@import "./index.css";
+@import "./components/modals.css";
+
+main {
+    flex-direction: column;
+}
+
+.select__section {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.select__container--admin-page {
+    width: 18rem;
+}
+.company_info__section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.departments__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.departments__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin_dashboard_list__container {
+    width: 100%;
+    height: 24rem;
+    background-color: #F8F8F8;
+    overflow-y: auto;
+
+}
+.departments_list__container {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin_dashboard__list {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 3rem;
+    justify-content: center;
+    margin: 3rem 0;
+}
+.admin_dashboard__card {
+    border: 1px solid var(--color-brand-1);
+    height: 12.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin_dashboard__card--info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.admin_dashboard__card--options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+
+.employees__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.employees__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.employees_list__container {
+    width: 100%;
+    height: 24rem;
+    background-color: #F8F8F8;
+}
+.contract_new_employee {
+    flex-direction: row;
+    gap: 1rem;
+}
+.employees_department__container {
+    overflow-x: auto;
+    height: 18.125rem;
+    width: 100%;
+    background-color: var(--color-grey-5);
+}
+.employees_department__list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left:1rem;   
+}
+.employees_department__card {
+    height: 11.25rem;
+    min-width: 16.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid var(--color-brand-1);
+    background-color: var(--fixed-white);
+    padding: 1rem 2rem;
+}
+.users__header {
+    margin-bottom: 1rem;
+}
+
+.user__card {
+    height: 9rem;
+}
+.user__card--options {
+    align-self: center;
+}

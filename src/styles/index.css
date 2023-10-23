@@ -1,0 +1,112 @@
+@import "./globalStyles.css";
+@import "./components/buttons.css";
+@import "./components/texts.css";
+@import "./components/inputs.css";
+
+header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color-grey-4);
+    padding: 0 8rem;
+}
+.header_title__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header_title__component{
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--color-brand-2);
+    border-radius: 50%;
+}
+
+.header_buttons__container {
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    gap: 4rem;
+    padding: 2rem 8rem;
+}
+.image__section {
+    width: 50%;
+    height: 70rem;
+}
+.companies__section {
+    width: 50%;
+    height: 70rem;
+}
+.image__home_page {
+    width: 100%;
+    height: 100%;
+}
+.companies__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.companies__container {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 91%;
+}
+.overflow__container {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.companies__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.company__item {
+    border: 1px solid var(--color-brand-1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 1rem;
+}
+
+@media(max-width: 1300px) {
+    .image__section {
+        display: none;
+    }
+    .companies__section {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    header {
+        padding: 0 1rem;
+    }
+    main {
+        padding: 2rem 1rem
+    }
+}
+@media(max-width: 550px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        height: 10rem;
+    }
+    .header_buttons__container {
+        flex-direction: column;
+        width: 90%;
+        margin: 1rem;
+    }
+    .header__button {
+        width: 100%;
+    }
+}

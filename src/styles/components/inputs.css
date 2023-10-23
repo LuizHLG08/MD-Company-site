@@ -1,0 +1,51 @@
+.select__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.select1 {
+    height: 3.25rem;
+    background-color: var(--color-brand-1);
+    color: var(--fixed-white);
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    outline: 0;
+    border: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+}
+.select_icon__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+.select__icon {
+    font-size: 1.5rem;
+    color: var(--fixed-white);
+}
+.input {
+    height: 3.25rem;
+    padding: 0 1rem;
+    font-size: 1.0625rem
+}
+.select2 {
+    height: 3.25rem;
+    background-color: var(--fixed-white);
+    font-size: 1.0625rem;
+    padding: 0 1rem;
+    outline: 0;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    color: var(--color-grey-1-opacity-5);
+}
+
+
+

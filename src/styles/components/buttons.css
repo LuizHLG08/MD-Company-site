@@ -1,0 +1,86 @@
+.header__button {
+    height: 3rem;
+    font-weight: 700;
+    width: 8.875rem;
+    border: none;
+    cursor: pointer;
+}
+.button1 {
+    background-color: var(--fixed-white);
+    color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1)
+}
+.button1:hover {
+    color: var(--color-brand-2);
+    border-color: var(--color-brand-2)
+}
+.button2 {
+    background-color: var(--color-brand-1);
+    color: var(--fixed-white);
+    border: none;
+}
+.button2:hover {
+    background-color: var(--color-brand-2);
+}
+.company__sector {
+    background-color: var(--fixed-white);
+    color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 6rem;
+}
+.form__button {
+    height: 3rem;
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.view__button {
+    color: var(--color-success);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.edit__button {
+    color: var(--color-warning);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.delete__button {
+    color: var(--color-error-1);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.close__modal {
+    align-self: flex-end;
+    cursor: pointer;
+}
+.confirm__button {
+    border: none;
+    background-color: var(--color-success);
+    color: var(--fixed-white);
+}
+.confirm__button:hover {
+    background-color: var(--color-success-2);
+}
+#confirm__button--hire {
+    width: 11.875rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.button__delete1 {
+    margin-top: 4rem;
+    background-color: var(--fixed-white);
+    border: 1px solid var(--color-error-1);
+    color: var(--color-error-1);
+}
+.button__delete2 {
+    background-color: var(--color-error-1);
+    color: var(--fixed-white);
+    border: none;
+}
+
+

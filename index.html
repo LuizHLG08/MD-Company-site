@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+
+  <script src="https://kit.fontawesome.com/32a0baa515.js" crossorigin="anonymous"></script>
+  <script type="module" src="./src/scripts/index.js" defer></script>
+  <title>MD Companies</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_title__container">
+      <div class="header_title__component"></div>
+      <h2 class="header__title">MD Companies</h2>
+    </div>
+    <div class="header_buttons__container">
+      <button class="header__button--login header__button button1">Login</button>
+      <button class="header__button--register header__button button2">Cadastrar</button>
+    </div>
+  </header>
+  <main>
+    <section class="image__section">
+      <img class="image__home_page" src="./src/assets/img/home_page_image.png" alt="Empresários">
+    </section>
+    <section class="companies__section">
+      <div class="select__container">
+        <select name="select" id="select" class="select__sector select1">
+          <option disabled selected>Selecionar Setor</option>
+          <option value="Automotiva">Automotiva</option>
+          <option value="TI">TI</option>
+          <option value="Atacado">Atacado</option>
+          <option value="Textil">Textil</option>
+          <option value="Aeroespacial">Aeroespacial</option>
+          <option value="Manufatura">Manufatura</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Alimenticio">Alimentício</option>
+          <option value="Todos">Todos</option>
+        </select>
+        <div class="select_icon__container">
+          <i class="fa-solid fa-caret-down select__icon"></i>
+        </div>
+      </div>
+      <div class="companies__container">
+        <h2 class="list__title title2">Lista de Empresas</h2>
+        <div class="overflow__container">
+          <ul class="companies__list">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

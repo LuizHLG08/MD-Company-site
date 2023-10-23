@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/components/toast.css">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="../scripts/login.js" defer></script>
+  <title>Login Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_title__container">
+      <div class="header_title__component"></div>
+      <h2 class="header__title">Kenzie Empresas</h2>
+    </div>
+    <div class="header_buttons__container">
+      <button class="header__button--home header__button button1">Home</button>
+      <button class="header__button--register header__button button2">Cadastro</button>
+    </div>
+  </header>
+  <main>
+    <div class="login__container">
+      <h2 class="login__title title1">Login</h2>
+      <p class="login__message">Preencha os campos para realizar login</p>
+      <form>
+        <div class="login_inputs__container--email login_inputs__container">
+          <input name="email" class="login__input login__input--email input" type="email" placeholder="Seu e-mail" required>
+          <small id="wrong-email" class="wrong__credential alert hidden">email incorreto</small>
+          <small id="empty-email" class="empty__credential alert hidden">email obrigatório</small>
+        </div>
+        <div class="login_inputs__container--password login_inputs__container">
+          <input name="password" class="login__input login__input--password input" type="password" placeholder="Sua senha" required>
+          <small id="wrong-password" class="wrong__credential alert hidden">senha incorreta</small>
+          <small id="empty-password" class="empty__credential alert hidden">senha obrigatória</small>
+        </div>
+        <button class="form__button form__button--login button2">Login</button>
+        <p>ou</p>
+        <button class="form__button form__button--register button1">Cadastre-se</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

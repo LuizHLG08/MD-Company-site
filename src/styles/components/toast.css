@@ -1,0 +1,33 @@
+.toastify {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.div__toast {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 0.5rem 1rem;
+    padding: 0;
+    margin: 0.8rem;
+    flex-wrap: wrap;
+}
+.header__toast {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.img__toast {
+    height: 1.3rem;
+}
+.text__toast {
+    color: var(--color-grey-2);
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    width: 100%;
+}
+.text__toast a {
+    color: var(--brand-1);
+    text-decoration: underline;
+}

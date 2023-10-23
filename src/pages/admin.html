@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/admin.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/components/toast.css">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://kit.fontawesome.com/32a0baa515.js" crossorigin="anonymous"></script>
+  <script type="module" src="../scripts/admin.js" defer></script>
+  <title>Admin page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_title__container">
+      <div class="header_title__component"></div>
+      <h2 class="header__title">Kenzie Empresas</h2>
+    </div>
+    <div class="header_buttons__container">
+      <button class="header__button--logout header__button button1">Logout</button>
+    </div>
+  </header>
+  <main>
+    <section class="select__section">
+      <div class="select__container select__container--admin-page">
+        <select name="select" id="admin__select" class="select__company select1">
+          <option disabled selected value="">Selecionar Empresa</option>
+        </select>
+        <div class="select_icon__container">
+          <i class="fa-solid fa-caret-down select__icon"></i>
+        </div>
+      </div>
+    </section>
+    <section class="company_info__section">
+      <div class="departments__container">
+        <div class="departments__header">
+          <h2 class="department__title title3">Departamentos</h2>
+          <button class="department__button--create header__button button2">+ Criar</button>
+        </div>
+        <div class="departments_list__container admin_dashboard_list__container">
+          <h2 class="default__message">Selecione uma empresa</h2>
+        </div>
+      </div>
+      <div class="users__container">
+        <div class="users__header">
+          <h2 class="users__title title3">Usuários cadastrados</h2>
+        </div>
+        <div class="users_list__container admin_dashboard_list__container">
+          <h2 class="default__message">Nenhum usuário cadastrado</h2>
+          <ul class="users__list admin_dashboard__list">
+            <li class="user__card admin_dashboard__card">
+              <div class="user__card--info admin_dashboard__card--info">
+                <h2 class="user__card--name title4">Username</h2>
+                <span class="user__card--company-name">Nome Companhia</span>
+              </div>
+              <div class="user__card--options admin_dashboard__card--options">
+                <i class="fa-solid fa-pencil user__edit edit__button"></i>
+                <i class="fa-solid fa-trash user__delete delete__button"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="modals__section">
+
+      <dialog class="modal__controller modal__create_department">
+        <div class="modal__container">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close__modal close__modal--create" width="31" height="31"
+            viewBox="0 0 31 31" fill="none">
+            <path
+              d="M8.04082 24.3156L6.68457 22.9593L14.1439 15.5L6.68457 8.04058L8.04082 6.68433L15.5002 14.1437L22.9596 6.68433L24.3158 8.04058L16.8564 15.5L24.3158 22.9593L22.9596 24.3156L15.5002 16.8562L8.04082 24.3156Z"
+              fill="black" />
+          </svg>
+          <form class="create_department">
+            <h2 class="form__title title1">Criar Departamento</h2>
+            <fieldset>
+              <div class="input__container--create">
+                <input name="name" class=" create__input create__input--name input" type="text"
+                  placeholder="Nome do departamento" required>
+                <small class="wrong__credential empty__credential alert hidden name">campo obrigatório!</small>
+              </div>
+              <div class="input__container--create">
+                <input name="description" class="create__input create__input--description input" type="text"
+                  placeholder="Descrição" required>
+                <small class="wrong__credential empty__credential alert hidden description">campo obrigatório!</small>
+              </div>
+              <div class="input__container--create">
+                <div class="select__container">
+                  <select name="company_id" id="admin__select--create"
+                    class="create__input select__company select2 input">
+                    <option disabled selected value="">Selecionar Empresa</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="select_icon__container" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M12 15.375L6 9.37505L7.075 8.30005L12 13.25L16.925 8.32505L18 9.40005L12 15.375Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <small class="wrong__credential empty__credential alert hidden description">campo obrigatório!</small>
+              </div>
+              <button class="confirm__button confirm__button--create form__button">Criar</button>
+            </fieldset>
+          </form>
+        </div>
+      </dialog>
+
+      <dialog class="modal__controller modal__view_department">
+        <div class="modal__container">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close__modal close__modal--view" width="31" height="31"
+            viewBox="0 0 31 31" fill="none">
+            <path
+              d="M8.04082 24.3156L6.68457 22.9593L14.1439 15.5L6.68457 8.04058L8.04082 6.68433L15.5002 14.1437L22.9596 6.68433L24.3158 8.04058L16.8564 15.5L24.3158 22.9593L22.9596 24.3156L15.5002 16.8562L8.04082 24.3156Z"
+              fill="black" />
+          </svg>
+          <h2 class="department__name--modal-view title2">Nome do departamento</h2>
+          <p class="department__description--modal-view title4">Descrição do departamento</p>
+          <p class="company__name--modal-view">Empresa pertencente</p>
+          <form class="contract_new_employee">
+            <div class="select__container">
+              <select name="select__user" id="select__user" class="select2 input">
+              </select>
+              <svg xmlns="http://www.w3.org/2000/svg" class="select_icon__container" width="24" height="24"
+                viewBox="0 0 24 24" fill="none">
+                <path d="M12 15.375L6 9.37505L7.075 8.30005L12 13.25L16.925 8.32505L18 9.40005L12 15.375Z"
+                  fill="black" />
+              </svg>
+            </div>
+            <button id="confirm__button--hire" class="confirm__button">Contratar</button>
+          </form>
+          <div class="employees_department__container">
+            <ul class="employees_department__list">
+            </ul>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog class="modal__controller modal__edit_department">
+        <div class="modal__container">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close__modal close__modal--edit" width="31" height="31"
+            viewBox="0 0 31 31" fill="none">
+            <path
+              d="M8.04082 24.3156L6.68457 22.9593L14.1439 15.5L6.68457 8.04058L8.04082 6.68433L15.5002 14.1437L22.9596 6.68433L24.3158 8.04058L16.8564 15.5L24.3158 22.9593L22.9596 24.3156L15.5002 16.8562L8.04082 24.3156Z"
+              fill="black" />
+          </svg>
+          <h2 class="modal__edit--title title2">Editar Departamento</h2>
+          <form class="edit_department__form">
+            <input name="name" class="edit_department__input--name edit_department__input input" type="text"
+              placeholder="Digite o novo nome">
+            <input name="description" type="text"
+              class="edit_department__input--description edit_department__input input"
+              placeholder="Digite a nova descrição">
+            <button class="edit__department--confirm form__button confirm__button">Salvar</button>
+          </form>
+        </div>
+      </dialog>
+
+      <dialog class="modal__controller modal__delete--department">
+        <div class="modal__container modal__container--delete-department">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close__modal close__modal--delete-department" width="31" height="31"
+            viewBox="0 0 31 31" fill="none">
+            <path
+              d="M8.04082 24.3156L6.68457 22.9593L14.1439 15.5L6.68457 8.04058L8.04082 6.68433L15.5002 14.1437L22.9596 6.68433L24.3158 8.04058L16.8564 15.5L24.3158 22.9593L22.9596 24.3156L15.5002 16.8562L8.04082 24.3156Z"
+              fill="black" />
+          </svg>
+          <div class="modal_content__container">
+            <h2 class="title3 delete__department--warning"></h2>
+            <button class="delete__department--confirm button__delete2 form__button">Remover</button>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog class="modal__controller modal__edit_user">
+        <div class="modal__container">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close__modal close__modal--edit-user" width="31" height="31"
+            viewBox="0 0 31 31" fill="none">
+            <path
+              d="M8.04082 24.3156L6.68457 22.9593L14.1439 15.5L6.68457 8.04058L8.04082 6.68433L15.5002 14.1437L22.9596 6.68433L24.3158 8.04058L16.8564 15.5L24.3158 22.9593L22.9596 24.3156L15.5002 16.8562L8.04082 24.3156Z"
+              fill="black" />
+          </svg>
+          <h2 class="modal__edit--title title2">Editar Usuário</h2>
+          <form class="edit_user__form">
+            <input name="name" class="edit_user__input--name edit_user__input input" type="text"
+              placeholder="Digite o novo nome">
+            <input name="email" type="text"
+              class="edit_user__input--email edit_user__input input"
+              placeholder="Digite o novo email">
+            <button class="edit__user--confirm form__button confirm__button">Salvar</button>
+          </form>
+        </div>
+      </dialog>
+
+      <dialog class="modal__controller modal__delete_user">
+        <div class="modal__container modal__container--delete-user">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close__modal close__modal--delete-user" width="31" height="31"
+            viewBox="0 0 31 31" fill="none">
+            <path
+              d="M8.04082 24.3156L6.68457 22.9593L14.1439 15.5L6.68457 8.04058L8.04082 6.68433L15.5002 14.1437L22.9596 6.68433L24.3158 8.04058L16.8564 15.5L24.3158 22.9593L22.9596 24.3156L15.5002 16.8562L8.04082 24.3156Z"
+              fill="black" />
+          </svg>
+          <div class="modal_content__container">
+            <h2 class="title3 delete__user--warning"></h2>
+            <button class="delete__user--confirm button__delete2 form__button">Remover</button>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+  </main>
+</body>
+
+</html>
