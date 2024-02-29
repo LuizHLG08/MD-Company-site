@@ -1,5 +1,3 @@
-Projeto baseado em uma entrega do curso da Kenzie Academy Brasil.
-
 MD-Companies é um projeto que tem como objetivo exercitar os recursos mais avançados do JS vanilla. Ele simula um site de gestão de empresas, onde o usuário pode ser um administrador, ou um funcionário contratado ou não.
 
 MD-Companies acompanha as seguintes funcionalidades:
